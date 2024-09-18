@@ -1,0 +1,16 @@
+{
+    "name": "rakin/poeninja",
+    "description": "API Poe Ninja",
+    "autoload": {
+        "psr-4": {
+            "Rakin\\Poeninja\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rakin",
+            "email": "rafael.kin.78@gmail.com"
+        }
+    ],
+    "require": {}
+}
