@@ -1,6 +1,6 @@
 {
-    "name": "rakin/poeninja",
-    "description": "API Poe Ninja",
+    "name": "rakin/api-path",
+    "description": "API PAth",
     "autoload": {
         "psr-4": {
             "Rakin\\Poeninja\\": "src/"
@@ -22,5 +22,8 @@
     },
     "require": {
         "guzzlehttp/guzzle": "^7.9"
+    },
+    "scripts": {
+        "test": "vendor/bin/pest"
     }
 }
