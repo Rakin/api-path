@@ -11,9 +11,9 @@ test('list IndexState', function () {
 
     $indexState = new IndexState();
 
-    //$response = $indexState->get();
+    $response = $indexState->get();
 
-    //expect($response->getStatusCode())->toBeBetween(200, 299);
+    expect($response->getStatusCode())->toBeBetween(200, 299);
 });
 
 test('list currencyoverview', function () {
@@ -41,4 +41,4 @@ test('list itemoverview', function () {
         $response = $itemOverview->get();
         expect($response->getStatusCode())->toBeBetween(200, 299);
     }
-}); 
+});
