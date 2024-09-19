@@ -24,6 +24,10 @@
 |
 */
 
+use GuzzleHttp\Client;
+use GuzzleHttp\Handler\MockHandler;
+use GuzzleHttp\Psr7\Response;
+
 expect()->extend('toBeOne', function () {
     return $this->toBe(1);
 });
@@ -44,7 +48,50 @@ function something()
     // ..
 }
 
-function getReponseCliente()
+function getReponseGetIndexstate()
 {
-    return '';
+    $handler = new MockHandler();
+    $handler->append(
+        new Response(
+            status: 200,
+            body: file_get_contents('./tests//Data/poeninja.com/getindexstate.json')
+        )
+    );
+    return new Client([
+        $handler
+    ]);
+}
+
+function getReponseGetCurrencyoverview()
+{
+    $handler = new MockHandler();
+    $handler->append(
+        new Response(
+            status: 200,
+            body: file_get_contents('./tests//Data/poeninja.com/currencyoverview.json')
+        )
+    );
+    return new Client([
+        $handler
+    ]);
+}
+
+function getReponseGetItemoverview()
+{
+    $handler = new MockHandler();
+    $handler->append(
+        new Response(
+            status: 200,
+            body: file_get_contents('./tests//Data/poeninja.com/itemoverview.json')
+        )
+    );
+    return new Client([
+        $handler
+    ]);
+}
+
+
+function getLeague(): String
+{
+    return "Settlers";
 }
