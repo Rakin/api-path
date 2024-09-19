@@ -12,7 +12,6 @@ enum ItemType
     case DivinationCard;
     case SkillGem;
     case BaseType;
-
     case UniqueMap;
     case Map;
     case UniqueJewel;
@@ -21,15 +20,15 @@ enum ItemType
     case UniqueArmour;
     case UniqueAccessory;
     case Beast;
-    case Vials;
-    case DeliriumOrbs;
-    case Omens;
+    case Vial;
+    case DeliriumOrb;
+    case Omen;
     case UniqueRelic;
     case ClusterJewel;
-    case BlightedMaps;
+    case BlightedMap;
     case BlightRavagedMap;
     case Invitation;
-    case Memories;
-    case Coffins;
+    case Memory;
+    case Coffin;
     case AllflameEmber;
 }
